@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertdataActivity"
+    android:orientation="vertical"
+    android:layout_margin="6dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <EditText
+        android:hint="UserName"
+        android:id="@+id/idact_name"
+        android:textSize="22dp"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="E-mail"
+        android:id="@+id/idact_mail"
+        android:textSize="22dp"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="Mobile Number"
+        android:id="@+id/idact_mbnum"
+        android:textSize="22dp"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="Password"
+        android:id="@+id/idact_pswd"
+        android:textSize="22dp"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="Id"
+        android:id="@+id/idact_id"
+        android:textSize="22dp"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:onClick="submitdata"
+        android:id="@+id/idact_submit"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        android:textColor="#ff5040"
+        android:layout_width="340dp"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/idact_update"
+            android:onClick="updateuserdata"
+            android:text="update"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.5"
+            android:layout_width="0sp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/idact_getdata"
+            android:onClick="getuserdata"
+            android:text="getuserdata"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.5"
+            android:layout_width="0sp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/idact_deletedata"
+        android:onClick="deleteuserdata"
+        android:text="delete data"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
